@@ -1,0 +1,203 @@
+@import "compass/reset";
+@import "var";
+@import "modules";
+
+.bestseller-block {
+    display: block;
+    width: 100%;
+    font-family: $opensansBold;
+    padding: 25px 0;
+    .container {
+        .best_div {
+            float: left;
+            width: 32%;
+            margin-right:2%;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            .best_sale {
+                background: #efecec;
+                text-align: center;
+                border: $blueColor solid 4px;
+                border-radius: 5px;
+                padding: 10px 0 20px 0;
+                margin-bottom: 35px;
+                .best_title {
+                    .best_item_title {
+                        font-size: 18pt;
+                        font-family: $opensansBold;
+                        a {
+                            transition: .2s;
+                            display: inline-block;
+                            padding-left: 10%;
+                            background: url(../img/item-title-icon1.png) left center no-repeat;
+                            text-decoration: none;
+                            color: $blueColor;
+                            &:hover {
+                                text-decoration:underline;
+                                color: $blackColor;
+                                background: url(../img/item-title-icon2.png) left center no-repeat;
+                            }
+                        }
+                    }
+                }
+                .best_img {
+                    margin-top: 5px;
+                }
+                .best_description {
+                    padding: 0 20px;
+                    text-align: left;
+                    li {
+                        line-height: 16pt;
+                        font-size: 10pt;
+                    }
+                    .best_price {
+                        margin-top: 5px;
+                        color: #020202;
+                        font-size: 30pt;
+                        span {
+                            color: $blueColor;
+                            span {
+                                font-family: $ptsansRuble;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.apply {
+    display: block;
+    width: 100%;
+    font-family: $opensansBold;
+    padding: 25px 0;
+    .container {
+        .apply_form {
+            .name_phone {
+                height: 120px;
+                float: left;
+                width: 33%;
+                margin-right: 1%;
+            }
+            .date_doc {
+                height: 120px;
+                float: left;
+                width: 33%;
+                margin-right: 1%;
+                .input_file {
+                    input {
+                        width: 55%;
+                        float:left;
+                        margin-right: 2%;
+                        padding: 15px 6px;
+                        font-size: 13pt;
+                    }
+                    .file_upload {
+                        font-size: 14pt;
+                        font-family: $opensansBold;
+                        top: -2px;
+                        transition: .3s;
+                        position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+                        overflow: hidden; /* Все что выходит за пределы - скрываем */
+                        width: 40%;
+                        float:left; /* Задаем ширину кнопки выбора файла */
+                        height: 20px; /* Задаем высоту кнопки выбора файла */
+                        background: #f8f8f8;
+                        border-radius: 3px;
+                        padding: 14px 4px;
+                        color: #a0a0a0;
+                        text-align: center;
+                        box-shadow: 0 4px 0 #d2d0d0;
+                         &:hover, &:active {
+                             background: #fff;
+                             color: #3c763d;
+                             top: 2px;
+                             box-shadow: 0 0 0 #d2d0d0;
+                         }
+                         & input[type="file"]{
+                             display: none; /* Обязательно скрываем настоящий Input File */
+                         }
+                         & label {
+                              /* Растягиваем label на всю возможную площадь блока .file-upload */
+                              display: block;
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              width: 100%;
+                              height: 100%;
+                              cursor: pointer;
+                         }
+                         & span {
+                              line-height: 50px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+                         }
+                    }
+                }
+            }
+        }
+    }
+}
+.modal_container {
+    display: none;
+    font-family: $opensansBold;
+    width: 580px;
+    margin: 10px auto;
+    .apply_form {
+        position: relative;
+        .montage_titel {
+            margin-bottom: 20px;
+            p {
+                font-size: 15pt;
+                text-align: center;
+                color: #e3edf5;
+            }
+            span {
+                cursor: pointer;
+                font-family: $opensansSemiBold;
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                background: #fdfafa;
+                border-radius: 50%;
+                line-height: 23pt;
+            }
+        }
+        .montage {
+            height: 60px;
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+        }
+        .best_btn {
+            margin: 0;
+            float: left;
+            width: 32%;
+            button, span {
+                height: 49px;
+                font-family: $opensansBold;
+                width: 100%;
+                padding-top: 14px;
+                padding-bottom: 15px;
+                top: -2px;
+                &:hover, &:active {
+                    top: 2px;
+                }
+            }
+            span {
+                height: 19px;
+            }
+        }
+        .apply_message {
+            margin-top: 20px;
+            float: left;
+            width: 100%;
+            textarea {
+                height: 170px;
+            }
+        }
+    }
+}

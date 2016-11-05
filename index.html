@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1280">
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title">
+    <title>Хиты Продаж</title>
+</head>
+<body>
+    <!-- Попап "Подайте заявку" ОК -->
+    <div id="modal_success">
+          <span class="modal_close">X</span>
+          <p>Ваша заявка принята! Благодарим за обращение!</p>
+          <a href="" id="go_success"></a>
+    </div>
+    <!-- Попап "Графика монтажа" -->
+    <div id="modal_montage" class="modal_container">
+        <div class="apply_form">
+            <div class="montage_titel">
+                <p>Для получения информации введите данные</p>
+                <span class="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+            </div>
+            <form id="montage_form_list" method="post">
+                <div class="apply_form_inputs clearfix">
+                    <div class="montage">
+                        <input type="text" name="order" value="" placeholder="Номер заказа">
+                    </div>
+                    <div class="montage">
+                        <input type="text" name="surname" value="" placeholder="Фамилия">
+                    </div>
+                    <div class="best_btn">
+                        <button type="submit" class="btn-red" >ВОЙТИ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Попап "Графика монтажа2" -->
+    <div id="modal_montage_success" class="modal_container">
+        <div class="apply_form">
+            <div class="montage_titel">
+                <p>Для получения информации введите данные</p>
+                <span class="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+            </div>
+            <form id="montage_form_list_success" method="post" enctype="multipart/form-data">
+                <div class="apply_form_inputs clearfix">
+                    <div class="montage">
+                        <input type="text" name="order" value="" placeholder="Номер заказа" disabled>
+                    </div>
+                    <div class="montage">
+                        <input type="text" name="surname" value="" placeholder="Фамилия" disabled>
+                    </div>
+                    <div class="best_btn">
+                        <a  id="btn_montage_modal" class="hidden" >ВОЙТИ</a>
+                        <span class="btn-red modal_close" >ЗАКРЫТЫ</button>
+                    </div>
+                    <div class="apply_message clearfix">
+                        <textarea id="apply_message" name="message" rows="8" cols="40" placeholder="Данные по монтажу" disabled></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Попап "Графика монтажа" Error -->
+    <div id="modal_montage_error">
+          <span class="modal_close">X</span>
+          <p>Неверные данные Повторите попытку</p>
+          <a href="" id="go_montage_error"></a>
+    </div>
+    <!-- Пoдлoжкa -->
+    <div id="overlay"></div>
+    <!-- Блок ХИТЫ ПРОДАЖ -->
+    <section class="bestseller-block">
+        <div class="container">
+            <div class="section-title">ХИТЫ ПРОДАЖ</div>
+            <div class="best_wrapp clearfix">
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">VEKA WHS 60</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item1.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">VEKA WHS 72</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item2.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">VEKA SOFTLINE 82</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item3.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">REHAU BLITZ</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item1.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">REHAU SIB</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item2.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best_div">
+                    <div class="best_sale">
+                        <div class="best_title">
+                            <h3 class="best_item_title">
+                                <a href="#">REHAU DELIGHT</a>
+                            </h3>
+                        </div>
+                        <div class="best_img">
+                            <a href="#"><img src="img/best-item3.png" alt=""></a>
+                        </div>
+                        <div class="best_description">
+                            <ul>
+                                <li>- Кол-во камер (рама/створка) - 4/4</li>
+                                <li>- Монтажная ширина - 60 мм</li>
+                                <li>- Теплопакет 2.0 с белой рамкой</li>
+                                <li>- Толщина стеклопакета - 24 мм</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Армирование - замкнутое</li>
+                                <li>- Сопротивление теплопередаче -0,66 М2С/Вт</li>
+                            </ul>
+                            <div class="best_price">
+                                <p>от <span>6790 <span>р</span></span></p>
+                            </div>
+                        </div>
+                        <div class="best_btn">
+                            <a href="#submit_ekonom">ЗАКАЗАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Блок ПОДАЙТЕ ЗАЯВКУ -->
+    <section class="apply">
+        <div class="container">
+            <div class="section-title">ПОДАЙТЕ ЗАЯВКУ</div>
+            <div class="apply_form">
+                <form id="apply_form_list" method="post" enctype="multipart/form-data">
+                    <div class="apply_form_inputs clearfix">
+                        <div class="name_phone">
+                            <input type="text" name="name" value="" placeholder="Имя">
+                            <input class="tel" type="tel" name="phone" value="" placeholder="Телефон">
+                        </div>
+                        <div class="date_doc">
+                            <div class="input_file">
+                                <input type="text" id="filename" class="filename" placeholder="Добавить документ" disabled>
+                                <div class="file_upload">
+                                     <label>
+                                          <input type="file" name="filename">
+                                          <span>ОБЗОР</span>
+                                     </label>
+                                </div>
+                            </div>
+                            <input type="date" name="date" value="" placeholder="Введите дату и время">
+                        </div>
+                        <div class="apply_message clearfix">
+                            <textarea id="apply_message" name="message" rows="8" cols="40" placeholder="Введите сообщение"></textarea>
+                        </div>
+                    </div>
+                    <div class="best_btn">
+                        <button type="submit" class="btn-red" >ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- График монтажа(Пункт меню) - Попап -->
+    <a href="" id="go_montage" style="display: block; text-align:center; font-size:18pt; margin:20px;">График монтажа(Пункт меню) - Попап</a>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+    $(document).ready( function() {
+        $(".file_upload input[type=file]").change(function(){
+             var filename = $(this).val().replace(/.*\\/, "");
+             $("#filename").val(filename);
+        });
+        $(".tel").mask("+7(999) 999-9999");
+    });
+</script>
+<script>
+    $(document).ready(function() {
+    	/* Мoдaльне oкно "Подайте заявку" ОК */
+    	$('#go_success').click( function(event){
+    		event.preventDefault();
+    		$('#overlay').fadeIn(400,
+    		 	function(){
+    				$('#modal_success')
+    					.css('display', 'block')
+    					.animate({opacity: 1, top: '45%'}, 200);
+    		});
+    	});
+    	/* Зaкрытие мoдaльнoгo oкнa "Подайте заявку" */
+    	$('.modal_close, #overlay').click( function(){
+    		$('#modal_success')
+    			.animate({opacity: 0, top: '30%'}, 200,
+    				function(){
+    					$(this).css('display', 'none');
+    					$('#overlay').fadeOut(400);
+    				}
+    			);
+    	});
+        /* Мoдaльне oкно "График монтжа" */
+        $('#go_montage').click( function(event){ // лoвим клик пo ссылки с id="go"
+    		event.preventDefault(); // выключaем стaндaртную рoль элементa
+    		$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+    		 	function(){ // пoсле выпoлнения предъидущей aнимaции
+    				$('#modal_montage')
+    					.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+    					.animate({opacity: 1, top: '20%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+    		});
+    	});
+        /* Зaкрытие мoдaльнoгo oкнa "График монтжа" */
+        $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+    		$('#modal_montage')
+    			.animate({opacity: 0, top: '15%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+    				function(){ // пoсле aнимaции
+    					$(this).css('display', 'none'); // делaем ему display: none;
+    					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+    				}
+    			);
+    	});
+        /* Мoдaльне oкно "График монтжа2" Success */
+        $('#btn_montage_modal').click( function(event){ // лoвим клик пo ссылки с id="go"
+    		event.preventDefault(); // выключaем стaндaртную рoль элементa
+    		$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+    		 	function(){ // пoсле выпoлнения предъидущей aнимaции
+    				$('#modal_montage_success')
+    					.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+    					.animate({opacity: 1, top: '20%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+    		});
+    	});
+        /* Зaкрытие мoдaльнoгo oкнa "График монтжа2" Success */
+        $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+    		$('#modal_montage_success')
+    			.animate({opacity: 0, top: '15%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+    				function(){ // пoсле aнимaции
+    					$(this).css('display', 'none'); // делaем ему display: none;
+    					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
+    				}
+    			);
+    	});
+        /* Мoдaльне oкно "Графика монтажа" Error */
+        $('#go_montage_error').click( function(event){
+            event.preventDefault();
+            $('#overlay').fadeIn(400,
+                function(){
+                    $('#modal_montage_error')
+                        .css('display', 'block')
+                        .animate({opacity: 1, top: '40%'}, 200);
+            });
+        });
+        /* Зaкрытие мoдaльнoгo oкнa "Графика монтажа" Error */
+        $('.modal_close, #overlay').click( function(){
+            $('#modal_montage_error')
+                .animate({opacity: 0, top: '30%'}, 200,
+                    function(){
+                        $(this).css('display', 'none');
+                        $('#overlay').fadeOut(400);
+                    }
+                );
+        });
+    });
+</script>
+</body>
+</html>

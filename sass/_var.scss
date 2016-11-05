@@ -1,0 +1,79 @@
+$bg_color: #ffffff;
+$whiteFont: #ffffff;
+$blueColor: #4ea3dd;
+$blackColor: #050505;
+$opensansBold: OPENSANS-BOLD;
+$opensansSemiBold: OPENSANS-SEMIBOLD;
+$opensansExtraBold: OPENSANS-EXTRABOLD;
+$ptsansRuble:  RUBSN;
+$opensansRegular: OPENSANS-REGULAR;
+
+@font-face {
+  font-family: OPENSANS-BOLD;
+  src: url(../fonts/OPENSANS-BOLD.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-BOLDITALIC;
+  src: url(../fonts/OPENSANS-BOLDITALIC.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-CONDBOLD_1;
+  src: url(../fonts/OPENSANS-CONDBOLD_1.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-CONDLIGHT_1;
+  src: url(../fonts/OPENSANS-CONDLIGHT_1.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-CONDLIGHTITALIC_1;
+  src: url(../fonts/OPENSANS-CONDLIGHTITALIC_1.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-EXTRABOLD;
+  src: url(../fonts/OPENSANS-EXTRABOLD.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-EXTRABOLDITALIC;
+  src: url(../fonts/OPENSANS-EXTRABOLDITALIC.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-ITALIC;
+  src: url(../fonts/OPENSANS-ITALIC.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-LIGHT;
+  src: url(../fonts/OPENSANS-LIGHT.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-LIGHTITALIC;
+  src: url(../fonts/OPENSANS-LIGHTITALIC.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-REGULAR;
+  src: url(../fonts/OPENSANS-REGULAR.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-SEMIBOLD;
+  src: url(../fonts/OPENSANS-SEMIBOLD.ttf);
+}
+
+@font-face {
+  font-family: OPENSANS-SEMIBOLDITALIC;
+  src: url(../fonts/OPENSANS-SEMIBOLDITALIC.ttf);
+}
+
+@font-face {
+  font-family: RUBSN;
+  src: url(../fonts/RUBSN.OTF);
+}
